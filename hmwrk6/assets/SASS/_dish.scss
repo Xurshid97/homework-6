@@ -1,0 +1,99 @@
+.dish {
+    background: #1A1A1A;
+}
+
+.dish_cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        font-weight: 400;
+        font-size: 36px;
+        text-align: center;
+        letter-spacing: 0.2em;
+
+        color: #D9D9D9;
+    }
+
+    .dish_cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        margin-top: 60px;
+
+        .dish_card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            max-width: 350px;
+            background: #252525;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 6px;
+            padding-bottom: 24px;
+
+            .dish_img {
+                width: 100%;
+                margin-bottom: 29px;
+                border-radius: 6px;
+            }
+
+            h3 {
+                color: #D9D9D9;
+                font-weight: 400;
+                font-size: 32px;
+            }
+
+            p {
+                color: #A4A8B2;
+                font-weight: 400;
+                font-size: 12px;
+                margin-bottom: 20px;
+            }
+
+            h6 {
+                color: #85878C;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 18px;
+                margin-bottom: 28px;
+                max-width: 290px;
+            }
+
+            .starline {
+                display: flex;
+                gap: 40px;
+
+                .stars {
+                    display: flex;
+                    gap: 5px;
+                    align-items: center;
+                    color: #B3B3B3;
+
+                    i {
+                        color: #4D4D4D;
+                        font-size: 18px;
+                    }
+                }
+
+                button {
+                    background: #262626;
+                    border: 2px solid #303030;
+                    border-radius: 30px;
+                    color: rgba(255, 255, 255, 0.5);
+                    font-weight: 900;
+                    font-size: 10px;
+                    padding: 15px 32px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: #34C759;
+                        color: #252525;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,84 @@
+footer {
+    background: #252525;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    .container {
+        border-bottom: 2px solid #303030;
+        width: 100%;
+    }
+    .bot_footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0 30px;
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            font-size: 20px;
+            text-transform: uppercase;
+            color: #34C759;
+    
+            .logo_img {
+                width: 28px;
+                padding-bottom: 5px;
+            }
+        }
+
+        h5 {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 60px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #737373;
+        }
+    }
+}
+
+.footer_cards {
+
+    .time_cards {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding: 30px 0;
+
+        .time_card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            color: #FFFFFF;
+
+            i {
+                color: rgba(255, 255, 255, 0.5);
+                margin-bottom: 8px;
+            }
+
+            h6 {
+                font-size: 16px;
+                font-weight: 400
+            }
+
+            a {
+                color: #ffffff7c;
+                font-weight: 400;
+                font-size: 14px;
+            }
+        }
+    }
+
+    @media (max-width: 760px) {
+        .time_cards {
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+        }
+
+        h2 {
+            font-size: 42px;
+        }
+    }
+}

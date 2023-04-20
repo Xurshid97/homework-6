@@ -1,0 +1,72 @@
+.works {
+    background: #1A1A1A;
+}
+
+.works_cont {
+    padding: 300px 0 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        color: #D9D9D9;
+        font-weight: 400;
+        font-size: 36px;
+        text-transform: capitalize;
+    }
+
+    .work_cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        width: 100%;
+        margin-top: 60px;
+
+        .work_card {
+            background: #252525;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+            padding: 24px 24px 60px;
+            cursor: pointer;
+
+            h5 {
+                color: #FFFFFF;
+                font-weight: 400;
+                font-size: 22px;
+            }
+
+            .names {
+                margin-top: 10px;
+            }
+
+            p {
+                color: rgba(255, 255, 255, 0.5);
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 18px;
+                margin-top: 24px;
+                max-width: 207px;
+
+            }
+            
+            &:hover {
+                background: #34C759;
+                color: #191919;
+
+                h5 {
+                    color: #191919;
+                }
+                .same {
+                    background: #191919;
+                }
+
+                p {
+                    color: #191919;
+                }
+            }
+        }
+    }
+}
